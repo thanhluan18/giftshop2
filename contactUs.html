@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="layout.css">
+  <script language="javascript">
+function check(){}
+</script>
+  <style>
+
+
+ .container-fluid {
+		margin-top:20px;
+		margin-bottom:20px;}
+		
+	
+	#contact{
+	margin-top:20px;
+    background-color:#f1f1f1;
+    font-family: 'Roboto', sans-serif;}
+	
+		
+    input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+ 	input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+    resize: vertical;
+	}
+	input[type=number] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+   
+    resize: vertical;
+}
+
+ 
+input[type=submit]:hover {
+    background-color: #45a049;
+	
+}
+ 
+ 	input.ng-invalid {
+    background-color: #FFF;
+}
+input.ng-valid {
+    background-color:lightgreen;
+}
+.iframe1{
+	width: 100%;
+    height:500px ;
+    border-radius: 5px;
+    padding: 20px;
+	
+	}
+.aa{
+	background-color:#CCC;}	
+	
+	
+.form1{
+	padding-bottom:30px;
+	}	
+	
+	i,h5{
+	
+	padding:5px;
+	margin-top:5px;
+	margin-bottom:5p}
+	
+	
+section {
+    padding: 10px 0;
+}
+
+	.fa {
+  padding: 2px;
+  font-size: 40px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+	.fa-facebook {
+  background: #3B5998;
+  color: white;}
+  .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+   li
+	{
+		display:inline;
+		text-align:center;
+		padding:5px 10px 5px 10px;
+		color:#333;
+		font-weight:bold;
+		float:right;
+	
+		
+	}
+	.dd{
+		text-height:font-size
+		width:10px;
+  		list-style-type: none;
+		
+		}
+		
+ </style>
+
+<body ng-app="">
+<section id="navbar">
+<nav class="navbar navbar-expand-sm navbar-dark rounded">
+    	<a class="navbar-item" href="#"><img class="logo" src="Images/logomain.png"></a>
+        	<ul class="navbar-nav">
+            	<li class="nav-item">
+                	<a class="nav-link" href="Home.html">Home</a>
+                </li>           
+                <li class="nav-item">
+                <div class="dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Products</a>
+               <div class="dropdown-menu">             
+      				<a class="dropdown-item" href="product1.html">Watch</a>
+                    <a class="dropdown-item" href="productBracelet.html">Bracelet</a>
+      				<a class="dropdown-item" href="productsnow.html">Snow Ball</a>
+    			</div>
+               </div>
+                </li>
+  				<li class="nav-item">
+                   <a class="nav-link" href="AboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="contactUs.html">Contact Us</a>
+                </li>
+            </ul>
+             
+            <ul class="navbar-nav ml-auto">
+                 <form class="form-inline" action="/somepage">
+                    <input ng-model="myFilter" class="form-control" type="text" placeholder="Search products ..." style="background-color:#FFF">
+                    <button class="btn btn-primary" ng-click="searchFn()" type="submit">Search</button>
+                   </form>
+            </ul>
+	</nav> 
+    </section>
+<section id="contact">
+    <div class="well well-sm">
+      <h3 style="color:#06F"><strong>Contact Us:</strong></h3>
+    </div>
+<div class="container-fluid row">
+    	
+    <div class="col-sm-7"> 
+    <iframe class="iframe1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.326786282518!2d106.66429871435052!3d10.786264192314835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f39e5fa506f%3A0xe9b82409cff3ad0d!2zNTgwIEPDoWNoIE3huqFuZyBUaMOhbmcgOCwgUGjGsOG7nW5nIDExLCBRdeG6rW4gMywgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1533130417688"></iframe>           
+	</div>
+    <div class="col-sm-5 aa" >
+        <h4 style="color:#06F"><strong>Get in Touch</strong></h4>
+        
+    <form class="form1" name="myForm" method="post" action="javascript:alert('Thank you for submitting your information');" onSubmit="return check();">
+    <div class="form-group">
+         
+        <input placeholder="Enter your name*..." name="Myname" type="text" ng-model="Myname" required >
+        <span ng-show="myForm.Myname.$touched && myForm.Myname.$invalid"></span>
+ 	</div>
+     <div class="form-group">
+        
+        <input placeholder="Enter your email*..."  name="Mymail" type="email" ng-model="Mymail" required >
+ 		<span ng-show="myForm.Mymail.$touched && myForm.Mymail.$invalid"></span>
+      </div>  
+      <div class="form-group">
+  
+        <input placeholder="Enter your number phone*..." name="Myphone" type="number" ng-model="Myphone" required >
+        <span ng-show="myForm.Myphone.$touched && myForm.Myphone.$invalid"></span>
+ 		</div>
+        <div class="form-group">
+    
+        <input placeholder="Enter your Address*..." name="Myaddress" type="text"  ng-model="Myaddress" required > 
+        <span ng-show="myForm.Myaddress.$touched && myForm.Myaddress.$invalid"></span>
+        </div>
+        <div class="form-group">
+    
+    <textarea cols="30" rows="4" placeholder="Enter Contents*" type="text" class="form-control"  name="Mycontents" ng-model="Mycontents" required > </textarea>
+ 	<span ng-show="myForm.Mycontents.$touched && myForm.Mycontents.$invalid"></span>
+    </div>
+        <input type="submit" name="button" class="btn btn-primary" id="button" value="Submit">
+        <input type="reset" name="button2" class="btn btn-primary" id="button2" value="Reset">
+        
+    </form>
+	
+		
+    </div>
+
+</div>
+</section>
+</body>
+<footer>
+<section id="footer" class="container-fuild">
+<div class="row">
+	<div class="col-sm-7">
+
+		<h5>Gifts Shops Corporations</h5>
+		<i class="fas fa-map-marker-alt" >: 580 Cach Mang Thang Tam, District 3, Ho Chi Minh City,Viet Nam.</i><br>
+		<i class="fas fa-mail-bulk">: giftshops@gmail.com</i>	<i class="fas fa-mobile-alt">:(028) 38460801</i><br>
+		
+		
+    
+	</div><br>
+    <div class="col-sm-5">
+    <ul class=" dd">
+						<li>
+                        <a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a></li>
+                        <li>
+                        <a href="https://twitter.com"  target="_blank" class="fa fa-twitter"></a>
+                        </li>
+                        <li><a href="https://www.google.com/"  target="_blank" class="fa fa-google"></a>
+                        </li>
+                        <li><a href="https://www.youtube.com"  target="_blank" class="fa fa-youtube"></a>
+                        </li>
+                       
+	</ul><br>
+     
+     			<div>
+				<br>
+<p align="right" >Copyright &copy  2018 All Rights Reserver-Designed by Group 3</p>	
+                </div>
+     
+    </div>
+    			
+</div>    
+</section>
+</footer>
+
+
+</html>

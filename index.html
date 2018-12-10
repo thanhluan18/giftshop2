@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="layout.css">
+  </head>
+ 
+<body>
+<section id="navbar">
+<nav class="navbar navbar-expand-sm rounded navbar-light">
+    	<a class="navbar-item" href="#"><img class="logo" src="Images/logomain.png"></a>
+        	<ul class="navbar-nav">
+            	<li class="nav-item">
+                	<a class="nav-link" href="Home.html">Home</a>
+                </li>           
+                <li class="nav-item">
+                <div class="dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Products</a>
+               <div class="dropdown-menu">             
+      				<a class="dropdown-item" href="product1.html">Watch</a>
+                    <a class="dropdown-item" href="productBracelet.html">Bracelet</a>
+      				<a class="dropdown-item" href="productsnow.html">Snow Ball</a>
+    			</div>
+               </div>
+                </li>
+  				<li class="nav-item">
+                   <a class="nav-link" href="AboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="contactUs.html">Contact Us</a>
+                </li>
+            </ul>
+             
+            <ul class="navbar-nav ml-auto">
+                 <form class="form-inline" action="/somepage">
+                    <input ng-model="myFilter" class="form-control search1" type="text" placeholder="Search products ...">
+                    <button class="btn btn-primary" ng-click="searchFn()" type="submit">Search</button>
+                   </form>
+            </ul>
+	</nav> 
+    </section>
+    
+	<div class="container-fluid">
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="da" src="Images/hinhnen2.jpg">
+      
+    </div>
+    <div class="carousel-item">
+      <img class="da" src="Images/hinhnen3.jpg">
+    </div>
+    <div class="carousel-item">
+      <img class="da" src="Images/hinhnen1.jpg">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+        </div>
+        
+     </div>
+     
+<br>
+<div class="card-read-more" align="center" style="padding-top:20px;margin-bottom:20px">
+                    <a class="btn btn-link btn-block" href="product1.html">
+                     Watch
+                    </a>
+                </div>
+<div class="container-fluid">
+    <div class="row">
+    
+        <div class="col-xs-12 col-sm-4">
+        
+            <div class="card">
+                <a class="img-card" href="watchdetail1.html">
+                    <img src="Images/co1.jpg">
+                </a>
+                <br />
+                <div class="card-content">
+                    <h6 class="">
+                        <a> Analog Black Men's Watch Brand CURNON (W.01)</a>
+                    </h6>
+                    <h6>Current Price: <b id="price">$120</b></h6>
+                    <h6>Old Price: <span><strike>$150</strike></span></h6>
+                </div>
+                <div class="card-read-more">
+                    <a class="btn btn-link btn-block" href="watchdetail1.html">
+                      Detail
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="card">
+                <a class="img-card" href="watchdetail2.html">
+                    <img src="Images/co2.jpg">
+                </a>
+                <br />
+                <div class="card-content">
+                    <h6 class="">
+                        <a> Analog White Men's Watch Brand CURNON (W.02)</a>
+                    </h6>
+                    <h6>Current Price: <b id="price">$160</b></h6>
+                    <h6>Old Price: <span><strike>$180</strike></span></h6>
+                </div>
+                
+                <div class="card-read-more">
+                    <a class="btn btn-link btn-block" href="watchdetail2.html">
+                       Detail
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="card">
+                <a class="img-card" href="watchdetail3.html">
+                    <img src="Images/co3.jpg"/>
+                </a>
+                <br />
+                <div class="card-content">
+                  <h6 class="">
+                        <a> Analog Black Men's Watch Brand CURNON (W.03)</a>
+                    </h6>
+                    <h6>Current Price: <b id="price">$150</b></h6>
+                    <h6>Old Price: <span><strike>$170</strike></span></h6>
+                </div>
+                
+                <div class="card-read-more">
+                    <a class="btn btn-link btn-block" href="watchdetail3.html">
+                       Detail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>   
+     <br>
+       <div class="card-read-more" align="center" style="padding-top:20px;margin-bottom:20px">
+                    <a class="btn btn-link btn-block" href="productBracelet.html">
+                     bracelet
+                    </a>
+                </div>
+      <div class="container-fluid">
+    <div class="row"> 
+        
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+            <div class="card">
+                <a class="img-card" href="braceletdetail1.html">
+<img src="Images/vong1.jpg">
+                </a>
+                <br />
+                 <div class="card-content">
+                  <h6 class="">
+                        <a>  Women's Charm Bracelet Brand AAA (AAA.1)</a>
+                    </h6>
+                    <h6>Current Price: <b id="price">$1800</b></h6>
+                    <h6>Old Price: <span><strike>$2000</strike></span></h6>
+                </div>
+                
+                <div class="card-read-more">
+                    <a class="btn btn-link btn-block" href="braceletdetail1.html">
+                       Detail 
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="card">
+                <a class="img-card" href="braceletdetail2.html">
+                    <img src="Images/vong2.jpg">
+                </a>
+                <br />
+                 <div class="card-content">
+                  <h6 class="">
+                        <a> Women's Charm Bracelet Brand AAA (AAA.2)</a>
+                    </h6>
+                    <h6>Current Price: <b id="price">$1750</b></h6>
+                    <h6>Old Price: <span><strike>$1900</strike></span></h6>
+						
+                </div>
+                
+                <div class="card-read-more">
+                    <a class="btn btn-link btn-block" href="braceletdetail2.html">
+                       Detail
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="card">
+                <a class="img-card" href="braceletdetail3.html">
+                    <img src="Images/vong3.jpg">
+                </a>
+                <br />
+                 <div class="card-content">
+                  <h6 class="">
+                        <a> Women's Charm Bracelet Brand AAA (AAA.3)</a>
+                    </h6>
+                   <h6>Current Price: <b id="price">$2050</b></h6>
+                    <h6>Old Price: <span><strike>$2100</strike></span></h6>
+						
+                </div>
+                
+                <div class="card-read-more">
+                    <a class="btn btn-link btn-block" href="braceletdetail3.html">
+                       Detail
+                    </a>
+                </div>
+            </div>
+        </div>
+     </div>
+     </div>   
+        <br>
+       <div class="card-read-more" align="center" style="padding-top:20px;margin-bottom:20px">
+                    <a class="btn btn-link btn-block" href="productsnow.html">
+                     Snowball
+                    </a>
+                </div>
+    <div class="container-fluid">
+    <div class="row">
+       <div class="col-xs-12 col-sm-4">
+            <div class="card">
+                <a class="img-card" href="snowdetail1.html">
+                    <img src="Images/iquatang1.jpg">
+                    </a>
+                <br />
+                <div class="card-content">
+                  <h6 class="">
+                        <a> Snowball double bear with lights Brand IQuaTang (I.01)</a>
+                    </h6>
+                    <h6>Current Price: <b id="price">$14</b></h6>
+                    <h6>Old Price: <span><strike>$16</strike></span></h6>
+                </div>
+                
+                <div class="card-read-more">
+                    <a class="btn btn-link btn-block" href="snowdetail1.html">
+                       Detail
+                    </a>
+                </div>
+            </div>
+        </div>
+      <div class="col-xs-12 col-sm-4">
+            <div class="card">
+                <a class="img-card" href="snowdetail2.html">
+                    <img src="Images/iquatang2.jpg">
+                </a>
+                <br />
+                 <div class="card-content">
+                  <h6 class="">
+                        <a> Snowball Love You Brand IQuaTang (I.02)</a>
+                    </h6>
+                    <h6>Current Price: <b id="price">$15</b></h6>
+                    <h6>Old Price: <span><strike>$17</strike></span></h6>
+                </div>
+                
+                <div class="card-read-more">
+                    <a class="btn btn-link btn-block" href="snowdetail2.html">
+                       Detail
+                    </a>
+                </div>
+            </div>
+        </div>
+      <div class="col-xs-12 col-sm-4">
+            <div class="card">
+                <a class="img-card" href="snowdetail3.html">
+                    <img src="Images/iquatang3.jpg">
+                </a>
+                <br />
+                 <div class="card-content">
+                  <h6 class="">
+                        <a> Snowball Hello Kitty Brand IQuaTang (I.03)</a>
+                    </h6>
+                   <h6>Current Price: <b id="price">$16</b></h6>
+                    <h6>Old Price: <span><strike>$18</strike></span></h6>
+                </div>
+                
+                <div class="card-read-more">
+                    <a class="btn btn-link btn-block" href="snowdetail3.html">
+                       Detail
+                    </a>
+                </div>
+            </div>
+			</div>
+			</div>
+			</div>
+            
+</body>
+<footer>
+<section id="footer" class="container-fuild">
+<div class="row">
+	<div class="col-sm-7">
+
+		<h5>Gifts Shops Corporations</h5>
+		<i class="fas fa-map-marker-alt" >: 580 Cach Mang Thang Tam, District 3, Ho Chi Minh City,Viet Nam.</i><br>
+		<i class="fas fa-mail-bulk">: giftshops@gmail.com</i>	<i class="fas fa-mobile-alt">:(028) 38460801</i><br>
+		
+		
+    
+	</div><br>
+    <div class="col-sm-5">
+    <ul class=" dd">
+						<li>
+                        <a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a></li>
+                        <li>
+                        <a href="https://twitter.com"  target="_blank" class="fa fa-twitter"></a>
+                        </li>
+                        <li><a href="https://www.google.com/"  target="_blank" class="fa fa-google"></a>
+                        </li>
+                        <li><a href="https://www.youtube.com"  target="_blank" class="fa fa-youtube"></a>
+                        </li>
+                       
+	</ul><br>
+     
+     			<div>
+				<br>
+<p align="right" >Copyright &copy  2018 All Rights Reserver-Designed by Group 3</p>	
+                </div>
+     
+    </div>
+    			
+</div>    
+</section>
+</footer>
+
+
+</html>
